@@ -1,5 +1,7 @@
 body {
   font-family: Helvetica;
+  width: 80%;
+  margin: 0;
 }
 
 p {
@@ -8,4 +10,44 @@ p {
 
 .main-content__title {
   font-family: Roboto;
+}
+
+.menu__item {
+  padding: 0 13px;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
+
+.header {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-section {
+  margin: auto;
+  width: 80%;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.logo,
+.menu {
+  display: inline-block;
+}
+
+.logo {
+  margin-right: 63%;
+  padding: 40px 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
 }
