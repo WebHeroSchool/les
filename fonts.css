@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'PT Serif';
-      src: url('fonts/PTSerif-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
+  font-family: 'PT Serif';
+  src: url('fonts/PTSerif-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
