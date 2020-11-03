@@ -1,5 +1,8 @@
 body {
   font-family: Helvetica;
+  width: 80%;
+  margin: 0;
+  border: dashed 1px red;
 }
 
 p {
@@ -8,4 +11,56 @@ p {
 
 .main-content__title {
   font-family: Roboto;
+}
+
+* {
+  border: dashed 1px red;
+}
+
+.menu__item {
+  padding: 0 13px;
+  border: dashed 1px red;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
+
+.header, .main-section {
+  border: dashed 1px red;
+}
+
+.header {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border: dashed 1px red;
+}
+
+.main-section {
+  margin: auto;
+  width: 80%;
+  border: dashed 1px red;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+  border: dashed 1px red;
+}
+
+.logo, .menu {
+  display: inline-block;
+  border: dashed 1px red;
+}
+
+.logo {
+  margin-right: 63%;
+  padding: 40px 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
 }
