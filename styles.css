@@ -43,7 +43,7 @@ p {
 }
 
 .wrapper {
-  margin: auto;
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -76,7 +76,6 @@ p {
   height: 28px;
   border-radius: 50%;
   opacity: 0.7;
-  border: dashed 1px red;
 }
 
 .logo__circle_color_blue {
