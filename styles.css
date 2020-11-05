@@ -7,28 +7,57 @@ p {
   font-family: arial;
 }
 
-.main-content {
-  padding-bottom: 206px;
-  width: 37%;
+.main {
+  padding: 0 63% 100px 0;
+  background: top right no-repeat url(img/mainimg.svg);
 }
 
-.main-content__title {
-  font-family: Roboto;
-  margin-bottom: 40px;
+.main__title {
+  margin: 0 0 40px 0;
+  font: bold 50px/65px 'PT Serif', arial, helvetica, sans-serif;
 }
 
-.main-content__subtitle {
-  margin-bottom: 41px;
+.main__title-text_highlight {
+  background: #ecf3ff;
 }
 
-.main-section {
-  margin: auto;
-  width: 80%;
+.main__subtitle {
+  margin: 0 0 41px 0;
+  font: 18px/21px Roboto, arial, helvetica, sans-serif;
+}
+
+.main__button {
+  display: inline-block;
+  font: 14px/16px Roboto, arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056ec;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+  animation-duration: .3s;
+  animation-name: slidein;
+}
+
+.main__button:hover {
+  opacity: .5;
+  color: red;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
 }
 
 .header {
-  margin: auto;
-  width: 80%;
+  margin-bottom: 100px;;
   display: flex;
   justify-content: space-between;
 }
