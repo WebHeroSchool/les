@@ -8,13 +8,14 @@ p {
 }
 
 .main {
-  padding: 0 63% 100px 0;
+  padding: 0 63% 250px 0;
   background: top right no-repeat url(img/mainimg.svg);
 }
 
 .main__title {
   margin: 0 0 40px 0;
-  font: bold 50px/65px 'PT Serif', arial, helvetica, sans-serif;
+  font: bold 66px/65px 'PT Serif', arial, helvetica, sans-serif;
+  line-height: 4.5vw;
 }
 
 .main__title-text_highlight {
@@ -23,15 +24,17 @@ p {
 
 .main__subtitle {
   margin: 0 0 41px 0;
-  font: 18px/21px Roboto, arial, helvetica, sans-serif;
+  font: 22px/21px Roboto, arial, helvetica, sans-serif;
+  width: 23vw;
+  margin-block-start: 1.1vw;
 }
 
 .main__button {
   display: inline-block;
-  font: 14px/16px Roboto, arial, helvetica, sans-serif;
+  font: 20px/30px Roboto, arial, helvetica, sans-serif;
   color: #fff;
   background: #0056ec;
-  padding: 14px 16px;
+  padding: 15px 20px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity 0.5s;
@@ -57,9 +60,9 @@ p {
 }
 
 .header {
-  margin-bottom: 100px;
+  margin-bottom: 11vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .wrapper {
@@ -74,11 +77,10 @@ p {
 
 .logo {
   position: relative;
-  padding: 40px 0;
+  padding: 40px 0 40px 44px;
   padding-left: 44px;
-  width: 190px;
-  height: 35px;
-  font: bold 24px/31px 'PT Serif', arial, helvetica, sans-serif;
+  font: bold 24px/32px 'PT Serif', arial, helvetica, sans-serif;
+  margin-right: 50vw;
 }
 
 .logo__circle {
