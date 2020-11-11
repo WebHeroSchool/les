@@ -7,9 +7,15 @@ p {
   font-family: arial;
 }
 
+.header {
+  margin-bottom: 5vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .main {
-  padding: 0 63% 250px 0;
-  background: top right no-repeat url(img/mainimg.svg);
+  padding: 106px 63% 160px 0;
+  background: top 2vw right no-repeat url(img/mainimg.svg);
 }
 
 .main__title {
@@ -59,12 +65,6 @@ p {
   }
 }
 
-.header {
-  margin-bottom: 11vw;
-  display: flex;
-  justify-content: flex-start;
-}
-
 .wrapper {
   margin: 0 auto;
   width: 80%;
@@ -112,7 +112,7 @@ p {
 .menu__item {
   position: relative;
   margin-right: 26px;
-  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  font: 700 18px/21px Roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity 0.5s;
@@ -163,4 +163,10 @@ p {
 .menu__item_active::after {
   opacity: 1;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+ .menu {
+ display: none;
+ }
 }
