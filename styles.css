@@ -7,30 +7,62 @@ p {
   font-family: arial;
 }
 
-.main-content {
-  padding-bottom: 206px;
-  width: 37%;
-}
-
-.main-content__title {
-  font-family: Roboto;
-  margin-bottom: 40px;
-}
-
-.main-content__subtitle {
-  margin-bottom: 41px;
-}
-
-.main-section {
-  margin: auto;
-  width: 80%;
-}
-
 .header {
-  margin: auto;
-  width: 80%;
+  margin-bottom: 5vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.main {
+  padding: 106px 63% 160px 0;
+  background: top 2vw right no-repeat url(img/mainimg.svg);
+}
+
+.main__title {
+  margin: 0 0 40px 0;
+  font: bold 66px/65px 'PT Serif', arial, helvetica, sans-serif;
+  line-height: 4.5vw;
+}
+
+.main__title-text_highlight {
+  background: #ecf3ff;
+}
+
+.main__subtitle {
+  margin: 0 0 41px 0;
+  font: 22px/21px Roboto, arial, helvetica, sans-serif;
+  width: 23vw;
+  margin-block-start: 1.1vw;
+}
+
+.main__button {
+  display: inline-block;
+  font: 20px/30px Roboto, arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056ec;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.5s;
+  animation-duration: 0.3s;
+  animation-name: slidein;
+}
+
+.main__button:hover {
+  opacity: 0.5;
+  color: red;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
 }
 
 .wrapper {
@@ -45,11 +77,10 @@ p {
 
 .logo {
   position: relative;
-  padding: 40px 0;
+  padding: 40px 0 40px 44px;
   padding-left: 44px;
-  width: 190px;
-  height: 35px;
-  font: bold 24px/31px 'PT Serif', arial, helvetica, sans-serif;
+  font: bold 24px/32px 'PT Serif', arial, helvetica, sans-serif;
+  margin-right: 50vw;
 }
 
 .logo__circle {
@@ -81,7 +112,7 @@ p {
 .menu__item {
   position: relative;
   margin-right: 26px;
-  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  font: 700 18px/21px Roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity 0.5s;
@@ -132,4 +163,10 @@ p {
 .menu__item_active::after {
   opacity: 1;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
