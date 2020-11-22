@@ -31,7 +31,6 @@ p {
 .main__subtitle {
   margin: 0 0 41px 0;
   font: 22px/21px Roboto, arial, helvetica, sans-serif;
-  width: 23vw;
   margin-block-start: 1.1vw;
 }
 
@@ -55,13 +54,13 @@ p {
 
 @keyframes slidein {
   from {
-    margin-right: 100%;
-    width: 300%;
-  }
+  margin-right: 100%;
+  width: 300%;
+}
 
-  to {
-    margin-right: 0%;
-    width: 100%;
+to {
+  margin-right: 0%;
+  width: 100%;
   }
 }
 
@@ -165,8 +164,238 @@ p {
   width: 100%;
 }
 
+@media (max-width: 1920px) {
+.main__title {
+  margin: 2px 3px 40px 3px;
+}
+
+.main__button {
+  padding: 14px 28px;
+  font: 18px/31px Roboto, arial, helvetica, sans-serif;
+}
+
+.main__subtitle {
+  margin: 41px 90px 47px 1px;
+}
+
+.hamburger-menu {
+  display: none;
+  }
+}
+
+@media (max-width: 1367px) {
+.main {
+  padding: 31px 50% 180px 0;
+  background: top 1vw left 36.4vw no-repeat url(img/1366.svg);
+}
+
+.main__title {
+  margin: 0px 68px 51px 78px;
+  font: bold 51px/65px 'PT Serif', arial, helvetica, sans-serif;
+  line-height: 4.5vw;
+}
+
+.main__button {
+  font: 18px/30px Roboto, arial, helvetica, sans-serif;
+  padding: 7px 0px;
+  margin: 1px 0px 0px 80px;
+}
+
+.main__subtitle {
+  margin: 0 100px 42px 82px;
+  font: 18px/20px Roboto, arial, helvetica, sans-serif;
+  margin-block-start: 1.1vw;
+}
+
+.menu__item {
+  position: relative;
+  margin-right: 29px;
+  font: 600 13px/21px Roboto, arial, helvetica, sans-serif;
+}
+
+.logo {
+  margin: 0 421px 5px 83px;
+}
+
+.hamburger-menu {
+  display: none;
+  }
+}
+
+
+@media (max-width: 1024px) {
+.logo__circle {
+  margin: -3px -57px;
+}
+
+.logo__text {
+  margin: 0px -56px;
+}
+
+.menu__item {
+  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  padding: 4px 0 0px 0;
+  white-space: nowrap;
+}
+
+.logo {
+  margin-right: 483px;
+  padding-top: 40px;
+}
+
+.main {
+  padding: 59px 62% 36px 0;
+  background: top 3vw right 2vw no-repeat url(img/1366.svg);
+  margin: 0px -81px 24px -60px;
+}
+
+.main__title {
+  margin: -11px 0 38px 3px;
+  font: bold 50px/66.25px 'PT Serif', arial, helvetica, sans-serif;
+  line-height: 6.5vw;
+}
+
+.main__subtitle {
+  margin: 0 62px 41px 6px;
+  font: 18px/21px Roboto, arial, helvetica, sans-serif;
+}
+
+.main__button {
+  display: inline-block;
+  font: 14px/16px Roboto, arial, helvetica, sans-serif;
+  padding: 14px 22px;
+}
+
+.hamburger-menu {
+  display: none;
+  }
+}
+
 @media (max-width: 768px) {
-  .menu {
-    display: none;
+.menu {
+  display: none;
+ }
+
+.logo__text {
+  display: none;
+}
+
+.logo__circle {
+  margin: 0px -13px;
+}
+
+.header {
+  margin: 0px;
+}
+
+.main {
+  text-align: center;
+  padding: 90% 23px 0;
+  background-size: 74%;
+  background-position: top center;
+  background: none;
+  background: top 2vw right 3vw no-repeat url(img/mainimgmob.svg);
+}
+
+.main__title {
+  margin-bottom: 35px;
+  font: bold 29px/39px PT Serif, arial, helvetica, sans-serif;
+}
+
+.main__subtitle {
+  margin: 25px 0;
+  font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+}
+
+.main__button {
+  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 10vw;
+  left: 87vw;
+  width: 6.8vw;
+  height: 2vw;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 174px 0;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menu__box_item {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu__box_item:hover {
+  background-color: #cfd8dc;
   }
 }
