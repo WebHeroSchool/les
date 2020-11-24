@@ -224,38 +224,38 @@ p {
 
 @media (max-width: 1024px) {
   .logo__circle {
-    margin: -3px -57px;
+    margin: -2px -37px;
   }
 
   .logo__text {
-    margin: 0 -56px;
+    margin: 0px -38px;
   }
 
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
-    padding: 4px 0 0 0;
+    margin: 12px 13px 6px 13px;
     white-space: nowrap;
   }
 
   .logo {
-    margin-right: 483px;
     padding-top: 40px;
+    margin: 0px 453px 0px 84px;
   }
 
   .main {
-    padding: 59px 62% 36px 0;
+    padding: 60px 61% 80px 0px;
     background: top 3vw right 2vw no-repeat url(img/1366.svg);
-    margin: 0 -81px 24px -60px;
+    margin: 0px 27px 0px -58px;
   }
 
   .main__title {
-    margin: -11px 0 38px 3px;
+    margin: -12px -82px 39px 104px;
     font: bold 50px/66.25px 'PT Serif', arial, helvetica, sans-serif;
     line-height: 6.5vw;
   }
 
   .main__subtitle {
-    margin: 0 62px 41px 6px;
+    margin: 0 -25px 39px 107px;
     font: 18px/21px Roboto, arial, helvetica, sans-serif;
   }
 
@@ -263,6 +263,7 @@ p {
     display: inline-block;
     font: 14px/16px Roboto, arial, helvetica, sans-serif;
     padding: 14px 22px;
+    margin: 0px 102px;
   }
 
   .hamburger-menu {
@@ -280,30 +281,31 @@ p {
   }
 
   .logo__circle {
-    margin: 0 -13px;
+    margin: 7px 33px;
   }
 
-  .header {
-    margin: 0;
+  .logo {
+    margin: -9px;
   }
 
   .main {
     text-align: center;
-    padding: 90% 23px 0;
-    background: top 2vw right 3vw no-repeat url(img/mainimgmob.svg);
+    padding: 280px 80px;
+    background: top 2vw right 5vw no-repeat url(img/mainimgmob.svg);
   }
 
   .main__title {
-    margin-bottom: 35px;
+    margin: -12px -89px 36px 2px;
     font: bold 29px/39px PT Serif, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
-    margin: 25px 0;
+    margin: 14px -39px 23px 47px;
     font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
   }
 
   .main__button {
+    margin: 2px -116px 1px -29px;
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
   }
 
