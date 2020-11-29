@@ -171,13 +171,13 @@ p {
 
   .main {
     padding: 108px 62% 160px 0;
-    background: top 2vw right 10.3vw no-repeat url(img/mainimg.svg);
+    background: top 1.8vw right 9.2vw no-repeat url(img/mainimg.svg);
   }
 
   .main__button {
-    padding: 16px 27px;
-    margin: 2px 20px 0 194px;
-    font: 18px/29px Roboto, arial, helvetica, sans-serif;
+    padding: 16px 29px;
+    margin: 6px 0 0 196px;
+    font: 18px/30px Roboto, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
@@ -283,10 +283,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-
+  .menu,
   .logo__text {
     display: none;
   }
@@ -398,9 +395,7 @@ p {
     text-align: center;
     padding: 12px;
     color: #000;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
+    font: 600 30px 'Roboto', sans-serif;
     text-decoration: none;
     transition-duration: 0.25s;
   }
